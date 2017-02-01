@@ -16,16 +16,29 @@ yes", "Most likely", "Outlook good", "Yes", "Signs point to yes",
 now", "Cannot predict now", "Concentrate and ask again", "Don ' t \
 count on it", "My reply is no", "My sources say no", "Outlook \
 not so good", "Very doubtful" ]
+import random
+def magic(question):
+    i = (random.randrange(len(answer_list)))
+    print(answer_list[i])
 
-def magic(user):
-    for i in range(answer_list):
-        print(i)
+magic(input("Enter a question: "))
+print()
 
 
 # PROBLEM 2 (Shuffle - 5pts)
 # A playing card consists of a suit (Heart, Diamond, Club, Spade) and a value (2,3,4,5,6,7,8,9,10,J,Q,K,A).
 # Create a list of all possible playing cards, which is a deck.
 # Then create a function that shuffles the deck, producing a random order.
+value_list = [2,3,4,5,6,7,8,9,10,"j", "k", "q", "a"]
+suit_list = ["hearts", "diamonds", "clubs", "spades"]
+
+def shuffle():
+    i = random.randrange(len(value_list))
+    j = random.randrange(len(suit_list))
+    print(value_list[i], "of", suit_list[j])
+
+shuffle()
+print()
 
 
 # PROBLEM 3 (The sieve of Eratosthenes - 10pts)
@@ -40,6 +53,9 @@ def magic(user):
 # Process all the numbers of the list in this way. When you have finished,
 # the only numbers left on the list are primes.
 # Use this method to determine all the primes between 1 and 1000.
+number_list = []
+
+
 
 # PROBLEM 4 (Tic-Tac-Toe - 15pts)
 # Write a Tic-Tac-Toe program that allows two people to play the game against each other.

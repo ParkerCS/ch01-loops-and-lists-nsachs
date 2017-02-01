@@ -9,6 +9,7 @@
 # If the user enters a grade lower than zero or higher than 100, just give an error message.
 # Don't worry about making an exception for these right now.
 
+
 # PROBLEM 2 (Vowels - 5pts)
 # Ask the user to supply a string.
 # Print how many different vowels there are in the string.
@@ -17,6 +18,7 @@
 # Try to print proper output (e.g., printing “There are 1 different vowels in the string” is ugly).
 # Example: When the user enters the string “It’s Owl Stretching Time,”
 # the program should say that there are 3 different vowels in the string.
+print(input("Enter a word: "))
 
 # PROBLEM 3 (Quadratic Equation - 6pts)
 # You can solve quadratic equations using the quadratic formula.
