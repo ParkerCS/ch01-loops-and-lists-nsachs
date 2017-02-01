@@ -17,8 +17,13 @@
 # y is not considered a vowel.
 # Try to print proper output (e.g., printing “There are 1 different vowels in the string” is ugly).
 # Example: When the user enters the string “It’s Owl Stretching Time,”
-# the program should say that there are 3 different vowels in the string.
-print(input("Enter a word: "))
+# the program should say that there are 3 different vowels in the string
+
+def vowels(words):
+    vowels = 0
+
+
+print(input("Enter a a phrase: "))
 
 # PROBLEM 3 (Quadratic Equation - 6pts)
 # You can solve quadratic equations using the quadratic formula.

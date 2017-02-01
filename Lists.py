@@ -29,15 +29,15 @@ print()
 # A playing card consists of a suit (Heart, Diamond, Club, Spade) and a value (2,3,4,5,6,7,8,9,10,J,Q,K,A).
 # Create a list of all possible playing cards, which is a deck.
 # Then create a function that shuffles the deck, producing a random order.
-value_list = [2,3,4,5,6,7,8,9,10,"j", "k", "q", "a"]
-suit_list = ["hearts", "diamonds", "clubs", "spades"]
-
-def shuffle():
+value_list = [2,3,4,5,6,7,8,9,10,"Jack", "Kind", "Queen", "Ace"]
+suit_list = ["Hearts", "Diamonds", "Clubs", "Spades"]
+deck = []
+for i in range(53):
     i = random.randrange(len(value_list))
     j = random.randrange(len(suit_list))
-    print(value_list[i], "of", suit_list[j])
+    card = print(value_list[i], "of", suit_list[j])
+    deck.append(card)
 
-shuffle()
 print()
 
 
@@ -54,6 +54,12 @@ print()
 # the only numbers left on the list are primes.
 # Use this method to determine all the primes between 1 and 1000.
 number_list = []
+
+for numbers in number_list:
+    #hit non zero number
+#use modulo - if mudolus = 0, overriding zeros
+
+#two loops
 
 
 
