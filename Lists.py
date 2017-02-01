@@ -17,6 +17,10 @@ now", "Cannot predict now", "Concentrate and ask again", "Don ' t \
 count on it", "My reply is no", "My sources say no", "Outlook \
 not so good", "Very doubtful" ]
 
+def magic(user):
+    for i in range(answer_list):
+        print(i)
+
 
 # PROBLEM 2 (Shuffle - 5pts)
 # A playing card consists of a suit (Heart, Diamond, Club, Spade) and a value (2,3,4,5,6,7,8,9,10,J,Q,K,A).
