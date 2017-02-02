@@ -3,8 +3,6 @@
 #you should also write code to test them. For practice, you should also comment your
 #functions as explained above.
 
-
-
 #PROBLEM 1 (8-ball - 5pts)
 # A magic 8-ball, when asked a question, provides a random answer from a list.
 # The code below contains a list of possible answers. Create a magic 8-ball program that
@@ -39,7 +37,6 @@ for i in range(53):
     deck.append(card)
 
 print()
-
 
 # PROBLEM 3 (The sieve of Eratosthenes - 10pts)
 # The sieve of Eratosthenes is a method to find all prime numbers between

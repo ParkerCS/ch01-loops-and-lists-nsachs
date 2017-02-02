@@ -69,12 +69,16 @@ print(input("Enter a a phrase: "))
 # Note: Make sure that you also take into account the case that A is zero,
 # and the case that both A and B are zero.
 def quadratic_equation(a,b,c):
+    solutions = 0
     if a == 0:
         print("Undefined")
     elif b == 0:
         print("The answer is 0.")
     else:
         x = (-b -(((b ** 2) - (4 * a * c)))** 0.5)/(2 * a)
-        y = ()
+        y = (-b - ((b ** 2) - (4 * a * c)) ** 0.5)/ (2 * a)
+
 
     print(x)
+
+def quadtratic_equation(3,4,
