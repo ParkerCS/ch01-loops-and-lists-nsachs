@@ -51,8 +51,22 @@ print()
 # the only numbers left on the list are primes.
 # Use this method to determine all the primes between 1 and 1000.
 number_list = []
+user_number = int(input("Enter a number: "))
 
-for numbers in number_list:
+for i in range(1, user_number + 1):
+    number_list.append(i)
+print(number_list)
+
+number_list[0] = 0
+for i in range(len(number_list)):
+    if i in number_list != 0:
+        for
+
+
+
+
+
+
     #hit non zero number
 #use modulo - if mudolus = 0, overriding zeros
 

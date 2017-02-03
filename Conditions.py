@@ -31,12 +31,13 @@ def grade(percent):
         print("D+")
     elif percent >= 65 and percent <= 66:
         print("D")
-    if percent <= 65 and percent >= 0:
+    elif percent <= 65 and percent >= 0:
         print("F")
     else:
         print("Error")
 
 grade(int(input("Enter your grade: ")))
+print()
 
 
 # PROBLEM 2 (Vowels - 5pts)
@@ -47,13 +48,20 @@ grade(int(input("Enter your grade: ")))
 # Try to print proper output (e.g., printing “There are 1 different vowels in the string” is ugly).
 # Example: When the user enters the string “It’s Owl Stretching Time,”
 # the program should say that there are 3 different vowels in the string
-'''
-def vowels(words):
-    vowels = 0
 
+user_input = (str(input("Enter a phrase: "))).lower()
+vowels = []
+count = 0
 
-print(input("Enter a a phrase: "))
-'''
+for i in ["a", "e", "i", "o", "u"]:
+    if i in user_input:
+        vowels.append(i)
+
+if len(vowels) == 1:
+    print("There is 1 vowel in your phrase.")
+else:
+   print("There are", len(vowels), "vowels in your phrase.")
+print()
 
 # PROBLEM 3 (Quadratic Equation - 6pts)
 # You can solve quadratic equations using the quadratic formula.
@@ -81,4 +89,4 @@ def quadratic_equation(a,b,c):
 
     print(x)
 
-def quadtratic_equation(3,4,
+#def quadtratic_equation(3,4,
