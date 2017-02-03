@@ -67,7 +67,6 @@ def prime():
 
 
 
-
 # PROBLEM 4 (Tic-Tac-Toe - 15pts)
 # Write a Tic-Tac-Toe program that allows two people to play the game against each other.
 # In turn, ask each player which row and column they want to play.
@@ -87,7 +86,9 @@ def prime():
 # the opponent. I use that to switch players after each move.
 
 # The main program will be something along the lines of (in pseudo-code):
-# display board
+ def display_board():
+
+
 # while True:
 #   ask for row
 #   ask for column
