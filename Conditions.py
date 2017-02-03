@@ -76,19 +76,20 @@ print()
 # then prints those solutions.
 # Note: Make sure that you also take into account the case that A is zero,
 # and the case that both A and B are zero.
-def quadratic_equation(a,b,c):
-    solutions = 0
-    if a == 0:
-        print("Undefined")
-    elif b == 0:
-        print("The answer is 0.")
-        solutions += 1
-    else:
-        x = ((-b -(((b ** 2) - (4 * a * c)))** 0.5)/(2 * a))
-        solutions += 2
-        print(x)
-        print("There are", solutions, "solutions")
+a = float(input("Enter any value for a: "))
+b = float(input("Enter any value for b: "))
+c = float(input("Enter any value for c: "))
 
+solutions = 0
 
+if a == 0:
+    print("Undefined")
+elif ((b ** 2) - (4 * a * c)) < 0:
+    print("There are no real solutions")
+elif b == 0:
+    print("The answer is 0.")
+else:
+    x = ((-b -(((b ** 2) - (4 * a * c)))** 0.5)/(2 * a))
+    y = ((-b +(((b ** 2) - (4 * a * c)))** 0.5)/(2 * a))
+    print("There are", solutions, "solutions,", x, "and", y)
 
-quadratic_equation(4,4,5)
