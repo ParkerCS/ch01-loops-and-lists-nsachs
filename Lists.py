@@ -50,6 +50,7 @@ print()
 # Process all the numbers of the list in this way. When you have finished,
 # the only numbers left on the list are primes.
 # Use this method to determine all the primes between 1 and 1000.
+''''
 number_list = []
 user_number = int(input("Enter a number: "))
 
@@ -65,7 +66,7 @@ def prime():
                 if number_list[i] % number_list[j] == 0:
                     number_list[j] = 0
 
-
+'''
 
 # PROBLEM 4 (Tic-Tac-Toe - 15pts)
 # Write a Tic-Tac-Toe program that allows two people to play the game against each other.
@@ -86,7 +87,22 @@ def prime():
 # the opponent. I use that to switch players after each move.
 
 # The main program will be something along the lines of (in pseudo-code):
- def display_board():
+row = for i in range(3):
+    int()
+
+def display_board(n):
+    for i in range(int(n)):
+        print(((" " * 2) + "|") * 2, end=" ")
+        print()
+        print(("--" * 4), end = " ")
+        print()
+
+display_board(3)
+
+def get_row_column(row, column):
+
+
+get_row_column(int(input("Enter a row (1-3): "), int(input("Enter a column (1-3): "))))
 
 
 # while True:
