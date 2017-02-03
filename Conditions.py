@@ -89,7 +89,9 @@ elif ((b ** 2) - (4 * a * c)) < 0:
 elif b == 0:
     print("The answer is 0.")
 else:
-    x = ((-b -(((b ** 2) - (4 * a * c)))** 0.5)/(2 * a))
-    y = ((-b +(((b ** 2) - (4 * a * c)))** 0.5)/(2 * a))
+    x = (-b -(((b ** 2) - (4 * a * c)))** 0.5)/(2 * a)
+    solutions += 1
+    y = (-b +(((b ** 2) - (4 * a * c)))** 0.5)/(2 * a)
+    solutions += 1
     print("There are", solutions, "solutions,", x, "and", y)
 
