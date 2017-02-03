@@ -60,7 +60,7 @@ for i in ["a", "e", "i", "o", "u"]:
 if len(vowels) == 1:
     print("There is 1 vowel in your phrase.")
 else:
-   print("There are", len(vowels), "vowels in your phrase.")
+   print("There are", len(vowels), "different vowels in your phrase.")
 print()
 
 # PROBLEM 3 (Quadratic Equation - 6pts)
