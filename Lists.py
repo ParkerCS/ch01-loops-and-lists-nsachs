@@ -67,6 +67,14 @@ def prime():
                     number_list[j] = 0
 
 '''
+prime_list = []
+num_list = []
+
+for i in range (2, 1001):
+    num_list.append(i)
+
+for num in num_list:
+    if num == 0:
 
 # PROBLEM 4 (Tic-Tac-Toe - 15pts)
 # Write a Tic-Tac-Toe program that allows two people to play the game against each other.
@@ -100,6 +108,8 @@ def display_board(n):
 display_board(3)
 
 def get_row_column(row, column):
+    while True:
+
 
 
 get_row_column(int(input("Enter a row (1-3): "), int(input("Enter a column (1-3): "))))

@@ -86,12 +86,10 @@ if a == 0:
     print("Undefined")
 elif ((b ** 2) - (4 * a * c)) < 0:
     print("There are no real solutions")
-elif b == 0:
-    print("The answer is 0.")
+elif ((b ** 2) - (4 * a * c)) == 0:
+    print("The solution is: ", -b)
 else:
     x = (-b -(((b ** 2) - (4 * a * c)))** 0.5)/(2 * a)
-    solutions += 1
     y = (-b +(((b ** 2) - (4 * a * c)))** 0.5)/(2 * a)
-    solutions += 1
-    print("There are", solutions, "solutions,", x, "and", y)
+    print("There are 2 solutions,", x, "and", y)
 
