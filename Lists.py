@@ -57,20 +57,14 @@ for i in range(1, user_number + 1):
     number_list.append(i)
 print(number_list)
 
-number_list[0] = 0
-for i in range(len(number_list)):
-    if i in number_list != 0:
-        for
+def prime():
+    number_list[0] = 0
+    for i in range(len(number_list)):
+        if i in number_list != 0:
+            for j in range (1, user_number + 1):
+                if number_list[i] % number_list[j] == 0:
+                    number_list[j] = 0
 
-
-
-
-
-
-    #hit non zero number
-#use modulo - if mudolus = 0, overriding zeros
-
-#two loops
 
 
 
