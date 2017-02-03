@@ -82,11 +82,13 @@ def quadratic_equation(a,b,c):
         print("Undefined")
     elif b == 0:
         print("The answer is 0.")
+        solutions += 1
     else:
-        x = (-b -(((b ** 2) - (4 * a * c)))** 0.5)/(2 * a)
-        y = (-b - ((b ** 2) - (4 * a * c)) ** 0.5)/ (2 * a)
+        x = ((-b -(((b ** 2) - (4 * a * c)))** 0.5)/(2 * a))
+        solutions += 2
+        print(x)
+        print("There are", solutions, "solutions")
 
 
-    print(x)
 
-#def quadtratic_equation(3,4,
+quadratic_equation(4,4,5)
