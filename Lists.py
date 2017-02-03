@@ -66,7 +66,7 @@ def prime():
                 if number_list[i] % number_list[j] == 0:
                     number_list[j] = 0
 
-'''
+
 prime_list = []
 num_list = []
 
@@ -76,6 +76,7 @@ for i in range (2, 1001):
 for num in num_list:
     if num == 0:
 
+'''
 # PROBLEM 4 (Tic-Tac-Toe - 15pts)
 # Write a Tic-Tac-Toe program that allows two people to play the game against each other.
 # In turn, ask each player which row and column they want to play.
@@ -95,24 +96,38 @@ for num in num_list:
 # the opponent. I use that to switch players after each move.
 
 # The main program will be something along the lines of (in pseudo-code):
-row = for i in range(3):
-    int()
+row = [1,2,3]
+column = ["a", "b", "c"]
+record = []
+player = ["X", "O"]
 
-def display_board(n):
-    for i in range(int(n)):
+
+
+
+def display_board(board):
+    for i in range(3):
         print(((" " * 2) + "|") * 2, end=" ")
         print()
-        print(("--" * 4), end = " ")
-        print()
+        if i < 2:
+            print(("--" * 4), end = " ")
+            print()
 
-display_board(3)
+board = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
+display_board(board)
 
-def get_row_column(row, column):
-    while True:
+def get_row_column():
+    user_input_row = int(input("Enter a row (1-3): "))
+    user_input_column = int(input("Enter a column (a-c): "))
+    if row[0] and column[0]:
+        print(player)
+
+
+get_row_column()
 
 
 
-get_row_column(int(input("Enter a row (1-3): "), int(input("Enter a column (1-3): "))))
+
+#get_row_column(int(input("Enter a row (1-3): "), int(input("Enter a column (1-3): "))))
 
 
 # while True:
