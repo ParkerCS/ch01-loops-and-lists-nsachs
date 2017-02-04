@@ -31,8 +31,8 @@
       <file leaf-file-name="Lists.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lists.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+            <state relative-caret-position="22">
+              <caret line="93" column="22" lean-forward="true" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -438,7 +438,21 @@
       <option name="project" value="LOCAL" />
       <updated>1486155290320</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="changes">
+      <created>1486240572838</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1486240572838</updated>
+    </task>
+    <task id="LOCAL-00024" summary="changes">
+      <created>1486240859189</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1486240859189</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -489,8 +503,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lists.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+        <state relative-caret-position="22">
+          <caret line="93" column="22" lean-forward="true" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
           <folding />
         </state>
       </provider>

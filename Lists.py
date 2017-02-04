@@ -86,7 +86,8 @@ prime_numbers()
 row = [1,2,3]
 column = [1,2,3]
 record = []
-player = ["X", "O"]
+player1 = ["X"]
+player2 = ["O"]
 
 
 def display_board(board):
@@ -104,16 +105,15 @@ def get_row_column():
     user_input_row = int(input("Enter a row (1-3): "))
     user_input_column = int(input("Enter a column (1-3): "))
     if row[0] and column[0]:
-        print(player)
+        print(player1)
 
 get_row_column()
 
-def full_board():
+def winner():
+    if len(row) == 3 and player1 == 3:
+        print("Player 1 wins!")
 
-def winner();
-
-
-
+winner()
 
 
 
