@@ -106,8 +106,13 @@ def get_row_column():
     if row[0] and column[0]:
         print(player)
 
-
 get_row_column()
+
+def full_board():
+
+def winner();
+
+
 
 
 
