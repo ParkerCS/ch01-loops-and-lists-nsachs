@@ -30,7 +30,7 @@ print()
 value_list = [2,3,4,5,6,7,8,9,10,"Jack", "Kind", "Queen", "Ace"]
 suit_list = ["Hearts", "Diamonds", "Clubs", "Spades"]
 deck = []
-for i in range(53):
+for i in range(52):
     i = random.randrange(len(value_list))
     j = random.randrange(len(suit_list))
     card = print(value_list[i], "of", suit_list[j])
@@ -50,31 +50,18 @@ print()
 # Process all the numbers of the list in this way. When you have finished,
 # the only numbers left on the list are primes.
 # Use this method to determine all the primes between 1 and 1000.
-''''
+'''
 number_list = []
-user_number = int(input("Enter a number: "))
-
-for i in range(1, user_number + 1):
+for i in range(1, 1001):
     number_list.append(i)
-print(number_list)
-
-def prime():
+def prime_numbers():
     number_list[0] = 0
-    for i in range(len(number_list)):
-        if i in number_list != 0:
-            for j in range (1, user_number + 1):
-                if number_list[i] % number_list[j] == 0:
+    for n in range(len(number_list)):
+        if number_list[n] != 0:
+            for j in range (1, 1001):
+                if number_list[j] % number_list[n] == 0:
                     number_list[j] = 0
-
-
-prime_list = []
-num_list = []
-
-for i in range (2, 1001):
-    num_list.append(i)
-
-for num in num_list:
-    if num == 0:
+prime_numbers()
 
 '''
 # PROBLEM 4 (Tic-Tac-Toe - 15pts)
@@ -97,11 +84,9 @@ for num in num_list:
 
 # The main program will be something along the lines of (in pseudo-code):
 row = [1,2,3]
-column = ["a", "b", "c"]
+column = [1,2,3]
 record = []
 player = ["X", "O"]
-
-
 
 
 def display_board(board):
@@ -117,7 +102,7 @@ display_board(board)
 
 def get_row_column():
     user_input_row = int(input("Enter a row (1-3): "))
-    user_input_column = int(input("Enter a column (a-c): "))
+    user_input_column = int(input("Enter a column (1-3): "))
     if row[0] and column[0]:
         print(player)
 
@@ -125,9 +110,6 @@ def get_row_column():
 get_row_column()
 
 
-
-
-#get_row_column(int(input("Enter a row (1-3): "), int(input("Enter a column (1-3): "))))
 
 
 # while True:
