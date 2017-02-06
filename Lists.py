@@ -83,35 +83,52 @@ prime_numbers()
 # the opponent. I use that to switch players after each move.
 
 # The main program will be something along the lines of (in pseudo-code):
-row = [1,2,3]
-column = [1,2,3]
-record = []
-player1 = ["X"]
-player2 = ["O"]
+row = [0,1,2]
+column = [0,1,2]
+player = "X"
 
 
 def display_board(board):
     for i in range(3):
-        print(((" " * 2) + "|") * 2, end=" ")
+        for j in range(3):
+            print(" " + str(board[i][j]) + " " + "|", end=" ")
         print()
         if i < 2:
-            print(("--" * 4), end = " ")
-            print()
+            print(("--" * 8), end = " ")
+        print()
 
 board = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
-display_board(board)
 
-def get_row_column():
-    user_input_row = int(input("Enter a row (1-3): "))
-    user_input_column = int(input("Enter a column (1-3): "))
-    if row[0] and column[0]:
-        print(player1)
 
-get_row_column()
+done = False
 
-def winner():
-    if len(row) == 3 and player1 == 3:
-        print("Player 1 wins!")
+def get_row_column(board, player):
+    while not done:
+        display_board(board)
+        user_input_row = int(input("Enter a row (0 - 2): "))
+        user_input_column = int(input("Enter a column (0 - 2): "))
+        if board[user_input_row][user_input_column] == " ":
+            board[user_input_row][user_input_column] = player
+            print(board)
+        else:
+            print("Sorry, that space is already taken.")
+
+get_row_column(board, player)
+
+
+
+def winner(board, player):
+    for i in range(len(board)):
+        row_count = 0
+        for j in range (len(board[i])):
+            if board[i][j] == player:
+                row_count += 1
+                if row_count == 3:
+                    return(True)
+
+    for user_input_column in range (len(board)):
+        for j in range(len(board[j])):
+            print("Player 1 wins! ")
 
 winner()
 
