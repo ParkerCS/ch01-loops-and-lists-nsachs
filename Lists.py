@@ -130,7 +130,7 @@ def winner(board, player):
         for j in range(len(board[j])):
             print("Player 1 wins! ")
 
-winner()
+winner(board,player)
 
 
 
