@@ -103,7 +103,7 @@ board = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
 
 done = False
 
-def get_row_column(board, player):
+def get_row_column(board, player, plays):
     while not done:
         display_board(board)
         user_input_row = int(input("Enter a row (0 - 2): "))
@@ -120,30 +120,29 @@ def get_row_column(board, player):
             player = True
             print(board)
             plays += 1
+        if plays == 9:
+            print("Draw!")
+            break
+        #if check_winner():
+            #break
 
-        if plays
+
+get_row_column(board, player, plays)
 
 
-get_row_column(board, player)
-
-
-def check_winner(board, player):
+def check_winner(board, player): #couldn't quite figure out checking for winner
     done = False
-    for i in range(len(board)):
-        row_count = 0
-        for j in range (len(board[i])):
-            if board[i][j] == player:
-                row_count += 1
-                if row_count == 3:
-                    return(True)
-    for user_input_column in range (len(board)):
-        for j in range(len(board[j])):
-            print("Player 1 wins!")
+    for i in range(3):
+        if board[i][0] == board[i][1] == board[i][2]:
+            if board[i][0] == "X":
+                print("X wins!")
+                done = True
+            elif board[i][0] == "O":
+                print("O wins!")
+                done = True
+
 
 check_winner(board,player)
-
-#def check_board_full(board,player):
-
 
 
 # while True:
