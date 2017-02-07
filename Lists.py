@@ -85,7 +85,8 @@ prime_numbers()
 # The main program will be something along the lines of (in pseudo-code):
 row = [0,1,2]
 column = [0,1,2]
-player = "X"
+player = True
+plays = 0
 
 
 def display_board(board):
@@ -107,17 +108,27 @@ def get_row_column(board, player):
         display_board(board)
         user_input_row = int(input("Enter a row (0 - 2): "))
         user_input_column = int(input("Enter a column (0 - 2): "))
-        if board[user_input_row][user_input_column] == " ":
-            board[user_input_row][user_input_column] = player
-            print(board)
-        else:
+        if board[user_input_row][user_input_column] != " ":
             print("Sorry, that space is already taken.")
+        elif player == True:
+            board[user_input_row][user_input_column] = "X"
+            player = False
+            print(board)
+            plays += 1
+        elif player == False:
+            board[user_input_row][user_input_column] = "O"
+            player = True
+            print(board)
+            plays += 1
+
+        if plays
+
 
 get_row_column(board, player)
 
 
-
-def winner(board, player):
+def check_winner(board, player):
+    done = False
     for i in range(len(board)):
         row_count = 0
         for j in range (len(board[i])):
@@ -125,12 +136,13 @@ def winner(board, player):
                 row_count += 1
                 if row_count == 3:
                     return(True)
-
     for user_input_column in range (len(board)):
         for j in range(len(board[j])):
-            print("Player 1 wins! ")
+            print("Player 1 wins!")
 
-winner(board,player)
+check_winner(board,player)
+
+#def check_board_full(board,player):
 
 
 
