@@ -1,3 +1,14 @@
+'''
+The "kind of hearts" sounds so much nicer.
+
+Draw will trigger on a win if the board fills at same time.
+The board isn't proper, but more importantly, the markers work.
+You only have a check win condition for horizontal wins for now.
+You probably should keep the game loop outside of the draw board function.
+Look to the pseudo code to write these in the future.
+Nice work getting it in this condition.
+'''
+
 #LISTS (35PTS TOTAL)
 #In these exercises you write functions. Of course, you should not only write the functions,
 #you should also write code to test them. For practice, you should also comment your
